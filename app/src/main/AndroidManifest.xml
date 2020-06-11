@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mas24h.avm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Mas @sistencia"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_not" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <activity
+            android:name=".actActualizar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".actMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actBuscar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actDisponibilidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actVisor"
+            android:screenOrientation="portrait" />
+        <activity android:name=".actSolicitud"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actDetalle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actCierre"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actFotos01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actFotos10"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actFotos20"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actFotos30"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Controlador.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <uses-library android:name ="org.apache.http.legacy"
+            android:required ="false"/>
+    </application>
+
+</manifest>

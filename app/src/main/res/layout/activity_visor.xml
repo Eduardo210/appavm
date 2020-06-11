@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/datControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="datControl"
+            android:textColor="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgSERV"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/serv" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Servicio"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgSERV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSERV">
+
+            <TextView
+                android:id="@+id/lblReporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/datReporte"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datReporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reporte"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/lblTipoAsistencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de asistencia"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datTipoAsistencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datTipoAsistencia"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">>
+
+            <TextView
+                android:id="@+id/lblCompania"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compania atendida"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                    android:id="@+id/datCompania"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="datCompania"
+                    android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">>
+
+            <TextView
+                android:id="@+id/lblNomUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de usuario"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datNomUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datNomUsuario"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">>
+            <TextView
+                android:id="@+id/lblTelUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono del usuario"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                    android:id="@+id/datTelUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="datTelUser"
+                    android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <TextView
+                android:id="@+id/lblOperador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operador"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datOperador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datOperador"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgUBICA"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            app:srcCompat="@drawable/ubicacion" />
+
+        <TextView
+            android:id="@+id/titUBICA"
+            android:layout_width="168dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Ubicacion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgUBICA"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgUBICA">
+
+            <TextView
+                android:id="@+id/lblEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datEstado"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">>
+            <TextView
+                android:id="@+id/lblMunicipio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Municipio"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                    android:id="@+id/datMunicpio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="datMunicipio"
+                    android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">>
+
+            <TextView
+                android:id="@+id/lblCalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calle | n. ext | n. int"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datCalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="datCalle"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+            <TextView
+                android:id="@+id/lblEsquina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esquina proxima o entre calles"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datEsquina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No proporciono"
+                android:textSize="18sp"
+                tools:text="No proporciono" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12">>
+            <TextView
+                android:id="@+id/lblColonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colonia"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datColonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No proporciono"
+                android:textSize="18sp"
+                tools:text="No proporciono" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+            <TextView
+                android:id="@+id/lblReferencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referencias"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datReferencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin referencias"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgVehiculo"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+            app:srcCompat="@drawable/coche" />
+
+        <TextView
+            android:id="@+id/titVEHICULO"
+            android:layout_width="168dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Vehiculo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgUBICA"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout14" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titVEHICULO">>
+            <TextView
+                android:id="@+id/lblMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin marca"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout15">>
+            <TextView
+                android:id="@+id/lblTipoVeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datTipoVeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin tipo"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout16">>
+            <TextView
+                android:id="@+id/lblColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin dato"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout17">>
+            <TextView
+                android:id="@+id/lblPlacas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placas"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datPlacas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin dato"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout18">>
+            <TextView
+                android:id="@+id/lblSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serie"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/datSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sin dato"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout20"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/stylo_bordes2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout19">
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

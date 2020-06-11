@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#607D8B</color>
+
+    <color name="anaranjado">#FF9800</color>
+    <color name="verde">#FF76FF03</color>
+    <color name="azul">#3F51B5</color>
+    <color name="gris">#37474F</color>
+    <color name="rojo">#F3072B</color>
+    <color name="azulToast">#0404B4</color>
+    <color name="blancoToast">#FFFFFF</color>
+
+
+
+</resources>

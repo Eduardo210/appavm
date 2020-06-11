@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itm_srh"
+        android:icon="@drawable/find_search_card_user_x32"
+        android:title="@string/itm_srh" />
+    <item
+        android:id="@+id/itm_disp"
+        android:title="Disponibilidad" />
+    <item
+        android:id="@+id/itm_solicitud"
+        android:title="Solicitudes" />
+    <item
+        android:id="@+id/itm_act"
+        android:title="Actualizar" />
+    <item
+        android:id="@+id/itm_endSession"
+        android:title="@string/itm_endSession" />
+</menu>
