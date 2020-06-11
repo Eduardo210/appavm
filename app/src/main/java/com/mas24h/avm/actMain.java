@@ -98,8 +98,7 @@ public class actMain extends AppCompatActivity {
             Intent buscar= new Intent(this, actBuscar.class );
             startActivity(buscar);
         } else if (id == R.id.itm_act){
-            Intent actualizar= new Intent(this, actActualizar.class );
-            startActivity(actualizar);
+            refreshFolios();
             //Toast.makeText(this, "Opcion actualizar", Toast.LENGTH_LONG).show();
 
         } else if (id == R.id.itm_disp) {
