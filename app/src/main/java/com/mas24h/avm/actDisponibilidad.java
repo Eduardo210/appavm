@@ -66,7 +66,7 @@ public class actDisponibilidad extends AppCompatActivity {
 
         recibirDatos();
 
-        buscarReporte("http://www.mas-asistencia.com/operador/operavial48.php?user="+tv_user.getText()+"");
+        buscarReporte("https://www.mas-asistencia.com/operador/operavial48.php?user="+tv_user.getText()+"");
 
        btn_disp1.setOnClickListener(new View.OnClickListener() {
            @Override
