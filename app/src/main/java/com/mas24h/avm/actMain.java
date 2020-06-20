@@ -242,8 +242,8 @@ public class actMain extends AppCompatActivity {
                             intent.putExtra("dato03", tvUser.getText().toString());
 
                             startActivity(intent);
-                            finish();
-                            //finish();
+
+
 
                         }
                     });
