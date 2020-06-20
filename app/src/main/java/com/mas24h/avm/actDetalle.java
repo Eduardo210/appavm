@@ -137,7 +137,7 @@ public class actDetalle extends AppCompatActivity implements View.OnClickListene
 
                 break;
             case R.id.ibFotos:
-                Toast.makeText(getApplicationContext(),"Modulo en Construcción",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Ya pelucas",Toast.LENGTH_LONG).show();
 //                Intent fotos= new Intent(actDetalle.this, actFotos01.class);
 //                fotos.putExtra("dato01", datControl.getText().toString());
 //                startActivity(fotos);
