@@ -234,7 +234,7 @@ public class actMain extends AppCompatActivity {
                         public void onClick(View view) {
 
                             //Intent intent= new Intent(actMain.this, actDetalle.class);
-                            Intent intent= new Intent(actMain.this, actMain.class);
+                            Intent intent= new Intent(actMain.this, actDetalle.class);
                             int dato = reportesList.get(recyclerView.getChildAdapterPosition(view)).getidReporte();
                             String dato2 = reportesList.get(recyclerView.getChildAdapterPosition(view)).getEstatus();
                             intent.putExtra("dato01", dato);
