@@ -243,8 +243,6 @@ public class actMain extends AppCompatActivity {
 
                             startActivity(intent);
 
-
-
                         }
                     });
 

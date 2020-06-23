@@ -53,7 +53,7 @@ public class actCierre extends AppCompatActivity {
         et_ComentariosCierre = (EditText)findViewById(R.id.et_ComentariosCierre);
         btnCerrar = (Button) findViewById(R.id.btnCerrar);
 
-        buscarReporte("http://www.mas-asistencia.com/operador/operavial52.php?control="+datControl.getText()+"");
+        buscarReporte("https://www.mas-asistencia.com/operador/operavial52.php?control="+datControl.getText()+"");
 
         btnCerrar.setOnClickListener(new View.OnClickListener() {
             @Override

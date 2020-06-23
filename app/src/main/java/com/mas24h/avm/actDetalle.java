@@ -91,7 +91,11 @@ public class actDetalle extends AppCompatActivity implements View.OnClickListene
 
         String sta=datEstatus.getText().toString();
 
-        if(sta.equals("4")){
+        //if(sta.equals("4")){
+        if(sta.equals("9")){
+            tvEstatusActual.setTextColor(tvEstatusActual.getContext().getResources().getColor(R.color.anaranjado));
+            tvEstatusActual.setText("Pendiente de arribo");
+        }else if(sta.equals("4")){
             tvEstatusActual.setTextColor(tvEstatusActual.getContext().getResources().getColor(R.color.anaranjado));
             tvEstatusActual.setText("Pendiente de arribo");
         }else if(sta.equals("5")){
@@ -137,6 +141,7 @@ public class actDetalle extends AppCompatActivity implements View.OnClickListene
 
                 break;
             case R.id.ibFotos:
+                Toasty.info(this, "modulo en construccion", Toast.LENGTH_LONG, false).show();
                 Toast.makeText(getApplicationContext(),"Ya pelucas",Toast.LENGTH_LONG).show();
 //                Intent fotos= new Intent(actDetalle.this, actFotos01.class);
 //                fotos.putExtra("dato01", datControl.getText().toString());
