@@ -52,7 +52,7 @@ public class actVisor extends AppCompatActivity {
 
         recibirDatos();
 
-        buscarReporte("http://www.mas-asistencia.com/operador/operavial45.php?control="+datControl.getText()+"");
+        buscarReporte("https://www.mas-asistencia.com/operador/operavial45.php?control="+datControl.getText()+"");
     }
 
     private void recibirDatos() {
