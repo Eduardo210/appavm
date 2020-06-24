@@ -9,7 +9,7 @@
 
     <!-- act main y menu superior -->
 
-    <string name="lblRportPend">Reportes pendientes de cierre</string>
+    <string name="lblRportPend">reportes asignados</string>
     <string name="lblUser">Usuario: </string>
     <string name="tvUser">User</string>
     <string name="itm_srh">Buscar reporte</string>
