@@ -44,7 +44,7 @@ public class actBuscar extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://www.mas-asistencia.com/operador/operavial46.php?reporte="+datReporte.getText()+"");
+                buscarProducto("https://www.mas-asistencia.com/operador/operavial46.php?reporte="+datReporte.getText()+"");
             }
         });
     }//termina create
